@@ -10,7 +10,8 @@
   text-align: center; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #fcfffe; }
 
 a {
   padding: 0 15px;
@@ -33,7 +34,8 @@ a {
     background-color: #fcfffe;
     width: 30px;
     height: 30px;
-    border-radius: 100px; }
+    border-radius: 100px;
+    box-shadow: 1px -3px 10px 3px rgba(0, 9, 0, 0.4); }
 
 .change .circle {
   -webkit-transform: rotate(180deg) translate(9px, 6px);
@@ -48,16 +50,18 @@ a {
   .header .navBarMain {
     width: 100%;
     max-height: 100px;
-    background-color: #3313a5;
+    background-color: #707c84;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
     grid-template-rows: 3fr 1fr; }
     .header .navBarMain .infoNav {
       grid-row: 2;
       grid-column: 2/4;
-      background-color: #4118d3;
-      padding-bottom: 30px; }
+      background-color: #808b93;
+      padding: 20px 0;
+      margin: 0 3%;
+      box-shadow: 1px 10px 3px rgba(0, 9, 0, 0.4); }
     .header .navBarMain ul {
       display: flex;
       justify-content: space-between;
@@ -73,16 +77,54 @@ a {
       .header .navBarMain li h4 {
         margin: 0 auto;
         text-align: center;
-        background-color: #efedf4;
-        box-shadow: 1px 5px #9b8eba; }
+        background-color: #363a3f;
+        color: #9b8eba;
+        box-shadow: 1px 5px 1px #2a2e31;
+        padding: 2%; }
 
 main {
   width: 100vw;
-  background-color: #3313a5; }
-  main .portrait {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr 3fr; }
+  main .landingDiv {
+    background-color: #1e2124;
+    grid-row: 1;
+    height: 100vh; }
+    main .landingDiv .portrait {
+      margin: 5% auto;
+      max-width: 60%; }
+      main .landingDiv .portrait img {
+        max-width: 100%;
+        border-radius: 800px; }
+  main article {
+    background-color: #3313a5;
+    grid-row: 3; }
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #707c84; }
+  section .sectionContact {
+    width: 80%;
+    height: 60%;
     margin: 0 auto;
-    max-width: 100%; }
-    main .portrait img {
-      max-width: 100%; }
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 3%;
+    background-color: #8b959c; }
+    section .sectionContact .title {
+      grid-row: 1;
+      grid-column: 1/4; }
+    section .sectionContact .spacer {
+      grid-row: 2; }
+    section .sectionContact .contactItem {
+      margin: 0 auto;
+      width: 90%;
+      grid-row: 2; }
+      section .sectionContact .contactItem p {
+        text-align: center;
+        color: #1e2124; }
 
 /*# sourceMappingURL=App.css.map */

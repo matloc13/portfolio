@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <a href="">matthew lockdall</a>
+        <a href="https://www.linkedin.com/in/matthew-lockdall/">matthew lockdall</a>
       </footer>
     )
   }

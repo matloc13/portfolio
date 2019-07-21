@@ -27,9 +27,10 @@ class Header extends Component {
                   <div className="bar2"></div>
                 <div className="bar3"></div> */}
                 <div className="circle"></div>
-                <img src={require("../images/wolf_running_clear1.png")} alt="logo of wolf" className="wolf"/>
+                <img src={require("../images/wolf_running_clear.png")} alt="logo of wolf" className="wolf"/>
 
               </div>
+              <div></div>
             </nav>
 
           :
@@ -41,7 +42,7 @@ class Header extends Component {
                 <div className="bar2"></div>
               <div className="bar3"></div> */}
               <div className="circle">
-                <img src={require("../images/wolf_running_clear1.png")} alt="logo of wolf" className="wolf"/>
+                <img src={require("../images/wolf_running_clear.png")} alt="logo of wolf" className="wolf"/>
               </div>
 
             </div>
