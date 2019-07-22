@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
 
-class Archive extends Component {
+class Bio extends Component {
   render() {
     return (
       <section>
-        <div>
-          
-        </div>
+        <article>
+
+        </article>
       </section>
+
     )
   }
 }
 
-export default Archive
+export default Bio

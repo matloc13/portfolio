@@ -59,7 +59,11 @@ class Header extends Component {
             </div>
             <div>
               <Link to="/">
-                <h1>Matthew Lockdall</h1>
+                <img
+                  src={require("../images/home.png")}
+                  alt="homeButton"
+                  className="icon"
+                />
               </Link>
               </div>
             <Nav />
