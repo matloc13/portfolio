@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import Nav from "./nav"
 
 class Header extends Component {
@@ -30,7 +31,16 @@ class Header extends Component {
                 <img src={require("../images/wolf_running_clear.png")} alt="logo of wolf" className="wolf"/>
 
               </div>
-              <div></div>
+
+              <div>
+                <Link to="/">
+                  <img
+                    src={require("../images/home.png")}
+                    alt="homeButton"
+                    className="icon"
+                  />
+                </Link>
+              </div>
             </nav>
 
           :
@@ -39,14 +49,19 @@ class Header extends Component {
             <div id="hIcon" className="hamburgerIcon"
               onClick={this.hamNav}>
               {/* <div className="bar1"></div>
-                <div className="bar2"></div>
+                  <div className="bar2"></div>
               <div className="bar3"></div> */}
               <div className="circle">
                 <img src={require("../images/wolf_running_clear.png")} alt="logo of wolf" className="wolf"/>
               </div>
 
+
             </div>
-            <div></div>
+            <div>
+              <Link to="/">
+                <h1>Matthew Lockdall</h1>
+              </Link>
+              </div>
             <Nav />
 
           </nav>

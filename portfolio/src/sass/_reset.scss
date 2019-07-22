@@ -1,0 +1,30 @@
+@import 'variables';
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-color: $backgroundwhite;
+}
+
+a {
+  padding: 0 15px;
+  color: $blacksmoke;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.hidden {
+  display: hidden;
+}
