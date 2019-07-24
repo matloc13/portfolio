@@ -1,40 +1,34 @@
 import React, { Component } from 'react'
+import ContactItem from '../components/contactItem'
 
 class Contact extends Component {
   render() {
     return (
-      <section >
+      <section className="contactWrapper">
         <div className="sectionContact">
+
           <h2 className="title">
             If you like to find out more, feel free to connect with me on social media.
           </h2>
 
-          <div className="spacer">
+          <div className="spacer"></div>
+          <ContactItem
+            linkLabel="https://github.com/matloc13"
+            name="github"
+          />
 
-          </div>
+          <ContactItem
+            linkLabel="https://www.linkedin.com/in/matthew-lockdall/"
+            name="linkedin"
+          />
 
-          <div className="contactItem">
-            <div>
+          <ContactItem
+            linkLabel="mailto:mlockdall26@gmail.com"
+            name="email"
 
-              <a href="https://github.com/matloc13" target="_blank">github</a>
+          />
 
-            </div>
-          </div>
-          <div className="contactItem">
-            <div>
-              <a href="https://www.linkedin.com/in/matthew-lockdall/" target="_blank">linkedin</a>
-
-            </div>
-          </div>
-          <div className="contactItem">
-            <div>
-              <a href="mailto:mlockdall26@gmail.com">email</a>
-              <p>get at me directly</p>
-            </div>
-          </div>
-          <div className="spacer">
-
-          </div>
+          <div className="spacer"></div>
         </div>
       </section>
     )

@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  height: 30px;
+  width: 100%;
+
+  .footer {
+    position: sticky;
+    bottom: 0;
+    margin: 30px, auto;
+    padding: 10%;
+    color: $whitetext;
+    background-color: $blacksmoke;
+    height: 100%;
+    width: 100%;
+
+    a {
+      color: $whitetext;
+    }
+  }
+}

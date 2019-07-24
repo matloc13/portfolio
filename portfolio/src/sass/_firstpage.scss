@@ -1,0 +1,29 @@
+main {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr 3fr;
+
+  .landingDiv {
+    background-color: $darksmoke;
+    grid-row: 1;
+    height: 100vh;
+
+    .portrait {
+      margin: 11% auto;
+      max-width: 60%;
+      @include animation(slideIn, 0.667s, ease-out, forwards);
+
+      img {
+        // margin:130px auto 30px;
+        max-width: 100%;
+        border-radius: 800px;
+      }
+    }
+  }
+
+  article {
+    background-color: $purple;
+    grid-row: 3;
+  }
+}
